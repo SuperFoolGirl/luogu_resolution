@@ -56,7 +56,7 @@ int main()
 {
     int n, m;
     cin >> n >> m;
-    vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0));
+    vector<vector<int>> dp(m + 1, vector<int>(n + 1, 0)); // dp[i][j]表示第i次传球在j号位置的方案数
     dp[0][1] = 1; // 初始状态：0次传球在1号位置
 
     for (int i = 1; i <= m; i++)
